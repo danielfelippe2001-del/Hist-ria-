@@ -29,7 +29,6 @@
       min-height: 100vh;
     }
 
-    /* Tela inicial */
     #intro {
       position: fixed;
       inset: 0;
@@ -87,7 +86,6 @@
       color: var(--bg);
     }
 
-    /* Slideshow principal */
     #story {
       display: none;
       min-height: 100vh;
@@ -117,17 +115,13 @@
       z-index: 2;
     }
 
-    .slide img, .slide video {
+    .slide img {
       max-width: min(92vw, 720px);
       max-height: 58vh;
       object-fit: contain;
       border-radius: 4px;
       box-shadow: 0 20px 60px rgba(0,0,0,0.6);
       margin-bottom: 2rem;
-    }
-
-    .slide video {
-      background: #000;
     }
 
     .caption {
@@ -158,7 +152,6 @@
       font-style: italic;
     }
 
-    /* Navegação */
     .nav {
       position: fixed;
       bottom: 2rem;
@@ -206,7 +199,6 @@
       transition: width 0.4s ease;
     }
 
-    /* Tela final */
     .final {
       text-align: center;
       padding: 3rem 1.5rem;
@@ -238,52 +230,22 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
-    /* Música (botão) */
-    #musicBtn {
-      position: fixed;
-      top: 1.2rem;
-      right: 1.2rem;
-      background: transparent;
-      border: 1px solid var(--soft);
-      color: var(--soft);
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      cursor: pointer;
-      z-index: 70;
-      font-size: 1.1rem;
-      display: none;
-    }
-
-    #musicBtn.visible {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
   </style>
 </head>
 <body>
 
-  <!-- INTRO -->
   <div id="intro">
     <h1>Para você</h1>
     <p>uma pequena viagem pela nossa história</p>
     <button id="startBtn">Começar</button>
   </div>
 
-  <!-- PROGRESSO -->
   <div class="progress" id="progress"></div>
 
-  <!-- BOTÃO MÚSICA (opcional) -->
-  <button id="musicBtn" title="Música">♪</button>
-
-  <!-- STORY -->
   <div id="story">
 
-    <!-- 1 -->
     <div class="slide active">
-      <img src="fotos/20200223_112112.jpg" alt="Nós">
+      <img src="20200223_112112.jpg" alt="Nós">
       <div class="caption">
         <div class="date">Fevereiro de 2020</div>
         <h2>O começo de tudo</h2>
@@ -291,9 +253,8 @@
       </div>
     </div>
 
-    <!-- 2 -->
     <div class="slide">
-      <img src="fotos/20200225_013555.jpg" alt="Nós">
+      <img src="20200225_013555.jpg" alt="Nós">
       <div class="caption">
         <div class="date">25 de fevereiro de 2020</div>
         <h2>O beijo que ainda aquece</h2>
@@ -301,9 +262,8 @@
       </div>
     </div>
 
-    <!-- 3 -->
     <div class="slide">
-      <img src="fotos/20200225_013708.jpg" alt="Nós">
+      <img src="20200225_013708.jpg" alt="Nós">
       <div class="caption">
         <div class="date">Mesma noite</div>
         <h2>Olhares que falam mais que palavras</h2>
@@ -311,9 +271,8 @@
       </div>
     </div>
 
-    <!-- 4 -->
     <div class="slide">
-      <img src="fotos/20200325_171132.jpg" alt="Nós">
+      <img src="20200325_171132.jpg" alt="Nós">
       <div class="caption">
         <div class="date">Março de 2020</div>
         <h2>De cabeça pra baixo… e ainda assim no lugar certo</h2>
@@ -321,9 +280,8 @@
       </div>
     </div>
 
-    <!-- 5 -->
     <div class="slide">
-      <img src="fotos/20200325_171033.jpg" alt="Você">
+      <img src="20200325_171033.jpg" alt="Você">
       <div class="caption">
         <div class="date">Mesmo dia</div>
         <h2>Esse sorriso</h2>
@@ -331,9 +289,8 @@
       </div>
     </div>
 
-    <!-- 6 -->
     <div class="slide">
-      <img src="fotos/20200515_195335.jpg" alt="Nós">
+      <img src="20200515_195335.jpg" alt="Nós">
       <div class="caption">
         <div class="date">Maio de 2020</div>
         <h2>Noites que valeram a pena</h2>
@@ -341,9 +298,8 @@
       </div>
     </div>
 
-    <!-- 7 -->
     <div class="slide">
-      <img src="fotos/20200515_195135.jpg" alt="Nós">
+      <img src="20200515_195135.jpg" alt="Nós">
       <div class="caption">
         <div class="date">Mesma noite</div>
         <h2>O beijo no ombro</h2>
@@ -351,9 +307,8 @@
       </div>
     </div>
 
-    <!-- 8 -->
     <div class="slide">
-      <img src="fotos/IMG_20210529_131603538_HDR.jpg" alt="Nós">
+      <img src="IMG_20210529_131603538_HDR.jpg" alt="Nós">
       <div class="caption">
         <div class="date">Maio de 2021</div>
         <h2>Espelho da vida</h2>
@@ -361,9 +316,8 @@
       </div>
     </div>
 
-    <!-- 9 -->
     <div class="slide">
-      <img src="fotos/IMG_20210606_123827141.jpg" alt="Praia">
+      <img src="IMG_20210606_123827141.jpg" alt="Praia">
       <div class="caption">
         <div class="date">Junho de 2021</div>
         <h2>Areia, sol e você</h2>
@@ -371,9 +325,8 @@
       </div>
     </div>
 
-    <!-- 10 -->
     <div class="slide">
-      <img src="fotos/Screenshot_20210720-224332.png" alt="Nós">
+      <img src="Screenshot_20210720-224332.png" alt="Nós">
       <div class="caption">
         <div class="date">Julho de 2021</div>
         <h2>Proximidade</h2>
@@ -381,9 +334,8 @@
       </div>
     </div>
 
-    <!-- 11 -->
     <div class="slide">
-      <img src="fotos/20230604_135245.jpg" alt="Parque">
+      <img src="20230604_135245.jpg" alt="Parque">
       <div class="caption">
         <div class="date">Junho de 2023</div>
         <h2>Passeios simples</h2>
@@ -391,9 +343,8 @@
       </div>
     </div>
 
-    <!-- 12 -->
     <div class="slide">
-      <img src="fotos/20230806_095644.jpg" alt="Cachoeira">
+      <img src="20230806_095644.jpg" alt="Cachoeira">
       <div class="caption">
         <div class="date">Agosto de 2023</div>
         <h2>Água caindo… e a gente subindo</h2>
@@ -401,9 +352,8 @@
       </div>
     </div>
 
-    <!-- 13 -->
     <div class="slide">
-      <img src="fotos/20231217_080248.jpg" alt="Vista">
+      <img src="20231217_080248.jpg" alt="Vista">
       <div class="caption">
         <div class="date">Dezembro de 2023</div>
         <h2>Do alto de tudo</h2>
@@ -411,19 +361,8 @@
       </div>
     </div>
 
-    <!-- 14 - Bolo -->
     <div class="slide">
-      <img src="fotos/IMG_20240309_165625066_HDR.jpg" alt="Nosso dia">
-      <div class="caption">
-        <div class="date">Março de 2024</div>
-        <h2>O dia em que cortamos o bolo juntos</h2>
-        <p>Um dos dias mais bonitos da nossa história.<br>Eu ainda guardo cada detalhe.</p>
-      </div>
-    </div>
-
-    <!-- 15 -->
-    <div class="slide">
-      <img src="fotos/20240311_145204.jpg" alt="Praia">
+      <img src="20240311_145204.jpg" alt="Praia">
       <div class="caption">
         <div class="date">Março de 2024</div>
         <h2>Caribe Brasileiro</h2>
@@ -431,9 +370,8 @@
       </div>
     </div>
 
-    <!-- 16 -->
     <div class="slide">
-      <img src="fotos/20240312_093520.jpg" alt="Barco">
+      <img src="20240312_093520.jpg" alt="Barco">
       <div class="caption">
         <div class="date">Dia seguinte</div>
         <h2>No barco</h2>
@@ -441,9 +379,8 @@
       </div>
     </div>
 
-    <!-- 17 -->
     <div class="slide">
-      <img src="fotos/20240315_071929.jpg" alt="Aeroporto">
+      <img src="20240315_071929.jpg" alt="Aeroporto">
       <div class="caption">
         <div class="date">Março de 2024</div>
         <h2>Em trânsito… juntos</h2>
@@ -451,27 +388,15 @@
       </div>
     </div>
 
-    <!-- 18 - Vídeo -->
     <div class="slide">
-      <video src="fotos/20250322_145819.mp4" controls playsinline></video>
+      <img src="20250322_150148.jpg" alt="Nós">
       <div class="caption">
         <div class="date">Março de 2025</div>
-        <h2>Esse riso</h2>
-        <p>O mesmo riso que eu quero continuar ouvindo pelos próximos anos.</p>
-      </div>
-    </div>
-
-    <!-- 19 -->
-    <div class="slide">
-      <img src="fotos/20250322_150148.jpg" alt="Nós">
-      <div class="caption">
-        <div class="date">Mesmo dia</div>
         <h2>Ainda nós</h2>
         <p>Depois de tudo… ainda somos nós.<br>E eu ainda escolho você.</p>
       </div>
     </div>
 
-    <!-- FINAL -->
     <div class="slide">
       <div class="final">
         <h2>Eu sei que estamos passando por um momento difícil.</h2>
@@ -485,7 +410,6 @@
 
   </div>
 
-  <!-- NAVEGAÇÃO -->
   <div class="nav" id="nav">
     <button id="prevBtn" title="Anterior">←</button>
     <button id="nextBtn" title="Próximo">→</button>
@@ -500,7 +424,6 @@
     const nextBtn = document.getElementById('nextBtn');
     const nav = document.getElementById('nav');
     const progress = document.getElementById('progress');
-    const musicBtn = document.getElementById('musicBtn');
 
     let current = 0;
     const total = slides.length;
@@ -509,7 +432,6 @@
       intro.classList.add('hidden');
       story.classList.add('active');
       nav.classList.add('visible');
-      musicBtn.classList.add('visible');
       updateProgress();
     });
 
@@ -519,14 +441,6 @@
       });
       current = index;
       updateProgress();
-
-      // Pausar vídeos quando sair do slide
-      slides.forEach((s, i) => {
-        const video = s.querySelector('video');
-        if (video && i !== index) {
-          video.pause();
-        }
-      });
     }
 
     function updateProgress() {
@@ -535,24 +449,18 @@
     }
 
     nextBtn.addEventListener('click', () => {
-      if (current < total - 1) {
-        showSlide(current + 1);
-      }
+      if (current < total - 1) showSlide(current + 1);
     });
 
     prevBtn.addEventListener('click', () => {
-      if (current > 0) {
-        showSlide(current - 1);
-      }
+      if (current > 0) showSlide(current - 1);
     });
 
-    // Teclado
     document.addEventListener('keydown', (e) => {
       if (e.key === 'ArrowRight') nextBtn.click();
       if (e.key === 'ArrowLeft') prevBtn.click();
     });
 
-    // Swipe simples no mobile
     let touchStartX = 0;
     document.addEventListener('touchstart', e => {
       touchStartX = e.changedTouches[0].screenX;
@@ -565,4 +473,3 @@
   </script>
 </body>
 </html>
-
