@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Para Você, Meu Amor</title>
+  <title>Para Você</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -129,14 +129,6 @@
       text-align: center;
     }
 
-    .caption .date {
-      font-size: 0.95rem;
-      letter-spacing: 0.2em;
-      color: var(--soft);
-      text-transform: uppercase;
-      margin-bottom: 0.8rem;
-    }
-
     .caption h2 {
       font-family: 'Playfair Display', serif;
       font-size: clamp(1.5rem, 4vw, 2.2rem);
@@ -146,10 +138,9 @@
     }
 
     .caption p {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       line-height: 1.7;
       color: #e8d5c0;
-      font-style: italic;
     }
 
     .nav {
@@ -236,7 +227,7 @@
 
   <div id="intro">
     <h1>Para você</h1>
-    <p>uma pequena viagem pela nossa história</p>
+    <p>um pedacinho da nossa história</p>
     <button id="startBtn">Começar</button>
   </div>
 
@@ -244,166 +235,158 @@
 
   <div id="story">
 
+    <!-- 1 - NOVA FOTO (videochamada) -->
     <div class="slide active">
+      <img src="primeira-foto.png" alt="Nós">
+      <div class="caption">
+        <h2>No começo de tudo</h2>
+        <p>Nesse tempo nem imaginávamos o tanto de história que iríamos construir juntos.</p>
+      </div>
+    </div>
+
+    <div class="slide">
       <img src="20200223_112112.jpg" alt="Nós">
       <div class="caption">
-        <div class="date">Fevereiro de 2020</div>
-        <h2>O começo de tudo</h2>
-        <p>Quando o mundo ainda não sabia o que viria…<br>mas a gente já sabia que tínhamos encontrado um no outro.</p>
+        <h2>Quando a gente ainda tava se conhecendo de verdade</h2>
+        <p>Eu lembro de sentir que tinha algo diferente. E tinha mesmo.</p>
       </div>
     </div>
 
     <div class="slide">
       <img src="20200225_013555.jpg" alt="Nós">
       <div class="caption">
-        <div class="date">25 de fevereiro de 2020</div>
-        <h2>O beijo que ainda aquece</h2>
-        <p>Tem momentos que o tempo não apaga.<br>Esse é um deles.</p>
+        <h2>Esse momento aqui</h2>
+        <p>Ainda sinto o mesmo quando penso nele.</p>
       </div>
     </div>
 
     <div class="slide">
       <img src="20200225_013708.jpg" alt="Nós">
       <div class="caption">
-        <div class="date">Mesma noite</div>
-        <h2>Olhares que falam mais que palavras</h2>
-        <p>Eu ainda sinto a mesma coisa quando olho pra você.</p>
+        <h2>Olhando pra você</h2>
+        <p>Sempre gostei desse seu jeito de sorrir.</p>
       </div>
     </div>
 
     <div class="slide">
       <img src="20200325_171132.jpg" alt="Nós">
       <div class="caption">
-        <div class="date">Março de 2020</div>
-        <h2>De cabeça pra baixo… e ainda assim no lugar certo</h2>
-        <p>Você sempre me mostrou que o amor também pode ser leve e brincalhão.</p>
+        <h2>A gente se divertindo</h2>
+        <p>Você sempre conseguiu me fazer rir, mesmo nos dias mais simples.</p>
       </div>
     </div>
 
     <div class="slide">
       <img src="20200325_171033.jpg" alt="Você">
       <div class="caption">
-        <div class="date">Mesmo dia</div>
         <h2>Esse sorriso</h2>
-        <p>É o mesmo sorriso que ainda me desarma.</p>
+        <p>É o mesmo que ainda me pega até hoje.</p>
       </div>
     </div>
 
     <div class="slide">
       <img src="20200515_195335.jpg" alt="Nós">
       <div class="caption">
-        <div class="date">Maio de 2020</div>
-        <h2>Noites que valeram a pena</h2>
-        <p>Mesmo nas noites mais simples, a gente encontrava um motivo pra sorrir.</p>
+        <h2>Noites quietas</h2>
+        <p>Só a gente. E era o suficiente.</p>
       </div>
     </div>
 
     <div class="slide">
       <img src="20200515_195135.jpg" alt="Nós">
       <div class="caption">
-        <div class="date">Mesma noite</div>
-        <h2>O beijo no ombro</h2>
-        <p>Às vezes o amor fala baixo… e mesmo assim a gente escuta.</p>
+        <h2>Perto de você</h2>
+        <p>Sempre foi o lugar onde eu me sentia em casa.</p>
       </div>
     </div>
 
     <div class="slide">
       <img src="IMG_20210529_131603538_HDR.jpg" alt="Nós">
       <div class="caption">
-        <div class="date">Maio de 2021</div>
-        <h2>Espelho da vida</h2>
-        <p>Olhando pra trás, vejo o quanto crescemos juntos.</p>
+        <h2>A gente crescendo junto</h2>
+        <p>Olhando pra trás, vejo o quanto a gente já viveu.</p>
       </div>
     </div>
 
     <div class="slide">
       <img src="IMG_20210606_123827141.jpg" alt="Praia">
       <div class="caption">
-        <div class="date">Junho de 2021</div>
-        <h2>Areia, sol e você</h2>
-        <p>Os dias de praia sempre foram nossos. O mar, as risadas, a liberdade.</p>
+        <h2>Praia, sol e você</h2>
+        <p>Esses dias sempre foram especiais pra mim.</p>
       </div>
     </div>
 
     <div class="slide">
       <img src="Screenshot_20210720-224332.png" alt="Nós">
       <div class="caption">
-        <div class="date">Julho de 2021</div>
-        <h2>Proximidade</h2>
-        <p>Não precisa de muita coisa quando o coração está no lugar certo.</p>
+        <h2>Só a gente</h2>
+        <p>Não precisava de muito. Só de estar perto.</p>
       </div>
     </div>
 
     <div class="slide">
       <img src="20230604_135245.jpg" alt="Parque">
       <div class="caption">
-        <div class="date">Junho de 2023</div>
-        <h2>Passeios simples</h2>
-        <p>Às vezes o melhor da vida está nos momentos mais ordinários… desde que seja com você.</p>
+        <h2>Passeios bobos</h2>
+        <p>Os melhores momentos da gente sempre foram os mais simples.</p>
       </div>
     </div>
 
     <div class="slide">
       <img src="20230806_095644.jpg" alt="Cachoeira">
       <div class="caption">
-        <div class="date">Agosto de 2023</div>
-        <h2>Água caindo… e a gente subindo</h2>
-        <p>Cada aventura nossa foi um lembrete de que juntos a gente vai mais longe.</p>
+        <h2>Aventuras juntas</h2>
+        <p>Com você, até os lugares mais comuns ficavam especiais.</p>
       </div>
     </div>
 
     <div class="slide">
       <img src="20231217_080248.jpg" alt="Vista">
       <div class="caption">
-        <div class="date">Dezembro de 2023</div>
-        <h2>Do alto de tudo</h2>
-        <p>Lembro de olhar essa vista e pensar: “que bom que você está aqui comigo”.</p>
+        <h2>Do alto</h2>
+        <p>Lembro de pensar: que bom que você tá aqui comigo.</p>
       </div>
     </div>
 
     <div class="slide">
       <img src="20240311_145204.jpg" alt="Praia">
       <div class="caption">
-        <div class="date">Março de 2024</div>
-        <h2>Caribe Brasileiro</h2>
-        <p>Você de chapéu, eu de chapéu… e o sol testemunhando o nosso sorriso.</p>
+        <h2>Mais um dia de sol</h2>
+        <p>Você de chapéu, eu do lado… e a gente feliz.</p>
       </div>
     </div>
 
     <div class="slide">
       <img src="20240312_093520.jpg" alt="Barco">
       <div class="caption">
-        <div class="date">Dia seguinte</div>
         <h2>No barco</h2>
-        <p>Mais um dia de água, vento e a certeza de que eu quero continuar navegando com você.</p>
+        <p>Mais um momento que eu não esqueço.</p>
       </div>
     </div>
 
     <div class="slide">
       <img src="20240315_071929.jpg" alt="Aeroporto">
       <div class="caption">
-        <div class="date">Março de 2024</div>
-        <h2>Em trânsito… juntos</h2>
-        <p>Mesmo nos momentos de espera, a gente encontrava um jeito de rir.</p>
+        <h2>Em qualquer lugar</h2>
+        <p>Contanto que fosse com você, tava bom.</p>
       </div>
     </div>
 
     <div class="slide">
       <img src="20250322_150148.jpg" alt="Nós">
       <div class="caption">
-        <div class="date">Março de 2025</div>
-        <h2>Ainda nós</h2>
-        <p>Depois de tudo… ainda somos nós.<br>E eu ainda escolho você.</p>
+        <h2>Ainda a gente</h2>
+        <p>Depois de tudo… eu ainda escolho você.</p>
       </div>
     </div>
 
     <div class="slide">
       <div class="final">
-        <h2>Eu sei que estamos passando por um momento difícil.</h2>
-        <p>Eu sei que as coisas pesaram. Eu sei que quase perdemos o caminho.</p>
-        <p>Mas olhando essas fotos… eu vejo tudo o que construímos.<br>Vejo o amor que ainda existe. Vejo a gente.</p>
-        <p>Eu não quero desistir de nós.<br>Eu quero reconquistar o seu sorriso, a sua confiança, o seu coração.</p>
-        <p>Se você ainda sentir um pedacinho do que eu sinto…<br>me dá uma chance de recomeçarmos.</p>
+        <h2>Eu sei que a gente tá passando por um momento difícil.</h2>
+        <p>Eu sei que as coisas pesaram. Eu sei que quase a gente se perdeu.</p>
+        <p>Mas olhando essas fotos, eu vejo tudo o que a gente construiu.<br>Vejo o quanto a gente já superou. Vejo a gente.</p>
+        <p>Eu não quero desistir de nós.<br>Eu quero recuperar o seu sorriso, a sua confiança, o seu carinho.</p>
+        <p>Se ainda tiver um pedacinho do que eu sinto…<br>me dá uma chance de a gente tentar de novo.</p>
         <p class="signature">Com todo o meu amor,<br>seu marido</p>
       </div>
     </div>
@@ -411,8 +394,8 @@
   </div>
 
   <div class="nav" id="nav">
-    <button id="prevBtn" title="Anterior">←</button>
-    <button id="nextBtn" title="Próximo">→</button>
+    <button id="prevBtn">←</button>
+    <button id="nextBtn">→</button>
   </div>
 
   <script>
@@ -436,16 +419,13 @@
     });
 
     function showSlide(index) {
-      slides.forEach((s, i) => {
-        s.classList.toggle('active', i === index);
-      });
+      slides.forEach((s, i) => s.classList.toggle('active', i === index));
       current = index;
       updateProgress();
     }
 
     function updateProgress() {
-      const percent = ((current + 1) / total) * 100;
-      progress.style.width = percent + '%';
+      progress.style.width = ((current + 1) / total * 100) + '%';
     }
 
     nextBtn.addEventListener('click', () => {
@@ -462,9 +442,7 @@
     });
 
     let touchStartX = 0;
-    document.addEventListener('touchstart', e => {
-      touchStartX = e.changedTouches[0].screenX;
-    });
+    document.addEventListener('touchstart', e => touchStartX = e.changedTouches[0].screenX);
     document.addEventListener('touchend', e => {
       const diff = e.changedTouches[0].screenX - touchStartX;
       if (diff < -50) nextBtn.click();
